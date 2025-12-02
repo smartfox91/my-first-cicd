@@ -1,1 +1,203 @@
-# my-first-cicd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Adli bin Jaaffar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Mohd Adli</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                [cite_start]<h1>Mohd Adli bin Jaaffar [cite: 20]</h1>
+                <h2>Front-End Developer & Multidisciplinary Professional</h2>
+                [cite_start]<p>From Fisherman to Front-End Developer and Everything In Between. [cite: 23]</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohd-adli-bin-jaaffar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mohd.adli.jaaffar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.self.so/mohd-adli-bin-jaaffar-5owkds" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/300" alt="Mohd Adli bin Jaaffar">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm Mohd Adli, a multidisciplinary professional whose journey has defied convention and embraced transformation. [cite_start]My career spans over a decade and sails across industries - from the calm waters of maritime engineering to the fast-paced realms of frontend development, IT service management, videography, and data analytics. [cite: 24, 25]</p>
+                <br>
+                <p>Starting as a fisherman, I navigated my way through naval architecture, aerospace, automotive logistics at Toyota, and eventually into the digital world. [cite_start]With hands-on experience in Laravel, React, and warehouse management systems, paired with certifications in Power BI, AWS, and Google Cloud, I blend technical depth with creative flair. [cite: 26, 27]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2024 - Present</div>
+                    <div class="timeline-content">
+                        [cite_start]<h3>PINC TECHNOLOGY SDN BHD [cite: 32]</h3>
+                        [cite_start]<h4>Mobile & Web Application Developer (Feb 2025 - Present) [cite: 36]</h4>
+                        [cite_start]<h4>IT Service Management (Oct 2024 - Jan 2025) [cite: 37, 38]</h4>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Shah Alam, Selangor, Malaysia</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2020 - Oct 2024</div>
+                    <div class="timeline-content">
+                        [cite_start]<h3>Uniti Runding Sdn Bhd [cite: 39]</h3>
+                        [cite_start]<h4>Frontend Developer [cite: 40]</h4>
+                        <p>Developed and maintained responsive web applications using Laravel. Collaborated closely with designers and backend developers. [cite_start]Handled debugging, testing, and optimizing applications based on user feedback. [cite: 42, 43]</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2021 - Oct 2021</div>
+                    <div class="timeline-content">
+                        [cite_start]<h3>Ifcon Technology Sdn Bhd [cite: 44]</h3>
+                        [cite_start]<h4>Frontend Web Developer [cite: 45]</h4>
+                        <p>Focused on building and refining user interfaces. [cite_start]Translated wireframes into functional, responsive interfaces ensuring an intuitive user experience. [cite: 48, 49]</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar 2018 - Nov 2020</div>
+                    <div class="timeline-content">
+                        [cite_start]<h3>Multiracial Reverted Muslims [cite: 51]</h3>
+                        [cite_start]<h4>New Media Manager [cite: 52]</h4>
+                        <p>Led digital content strategies across social media. [cite_start]Managed SEO optimization, directed multimedia content creation, and oversaw partnerships. [cite: 54, 55]</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2017 - Mar 2018</div>
+                    <div class="timeline-content">
+                        [cite_start]<h3>Toyota Malaysia [cite: 58]</h3>
+                        [cite_start]<h4>Warehouse Executive [cite: 59]</h4>
+                        [cite_start]<p>Overseeing daily warehouse operations, inventory management, and process optimization aligned with the Toyota Way. [cite: 61, 62]</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">July 1997 - July 2009</div>
+                    <div class="timeline-content">
+                        [cite_start]<h3>Self-Employed [cite: 64]</h3>
+                        [cite_start]<h4>Fisherman [cite: 65]</h4>
+                        [cite_start]<p class="location"><i class="fas fa-map-marker-alt"></i> Lumut, Perak, Malaysia [cite: 66]</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        [cite_start]<li>Laravel [cite: 27]</li>
+                        [cite_start]<li>React [cite: 27]</li>
+                        [cite_start]<li>Microsoft Power BI [cite: 14]</li>
+                        [cite_start]<li>AWS & Google Cloud [cite: 27]</li>
+                        [cite_start]<li>Warehouse Management Systems [cite: 10]</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills & Methods</h3>
+                    <ul class="skill-list">
+                        [cite_start]<li>Toyota Way [cite: 8]</li>
+                        [cite_start]<li>Warehouse Operations [cite: 9]</li>
+                        [cite_start]<li>Storytelling [cite: 30]</li>
+                        [cite_start]<li>Data Visualization [cite: 14]</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        [cite_start]<li>Malay (Native) [cite: 12]</li>
+                        [cite_start]<li>English (Professional) [cite: 12]</li>
+                        [cite_start]<li>Spanish (Elementary) [cite: 12]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <div class="two-col-grid">
+                <div>
+                    <h2 class="section-title">Education</h2>
+                    <div class="edu-item">
+                        [cite_start]<h4>Bachelor of Naval Architecture and Shipbuilding [cite: 69]</h4>
+                        [cite_start]<p>Universiti Kuala Lumpur (2012-2016) [cite: 68, 70]</p>
+                    </div>
+                    <div class="edu-item">
+                        [cite_start]<h4>Diploma, Aeronautical Engineering [cite: 72]</h4>
+                        [cite_start]<p>Universiti Teknologi Malaysia (2009-2012) [cite: 71, 72]</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="section-title">Certifications & Awards</h2>
+                    <ul class="cert-list">
+                        [cite_start]<li>Analyzing and Visualizing Data with Microsoft Power BI [cite: 14]</li>
+                        [cite_start]<li>Cloud untuk Rakyat via Rakyat Digital portal [cite: 15]</li>
+                        [cite_start]<li>AI untuk Rakyat via Rakyat Digital portal [cite: 16]</li>
+                        [cite_start]<li>AI Fluency via Rakyat Digital portal [cite: 17]</li>
+                        [cite_start]<li>AWS re/Start Graduate [cite: 17]</li>
+                        [cite_start]<li><strong>Award:</strong> Gold Medalist for Made in MIMET Exhibition [cite: 19]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            [cite_start]<p>Always looking to connect with forward-thinkers and boundary-pushers in tech. [cite: 29]</p>
+            [cite_start]<p><strong>Email:</strong> mohd.adli.jaaffar@gmail.com [cite: 2]</p>
+            [cite_start]<p><strong>Phone:</strong> +60136455520 [cite: 2]</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/mohd-adli-bin-jaaffar" target="_blank">LinkedIn</a> | 
+                <a href="https://www.self.so/mohd-adli-bin-jaaffar-5owkds" target="_blank">Personal Site</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Mohd Adli bin Jaaffar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
