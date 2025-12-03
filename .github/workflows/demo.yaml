@@ -5,10 +5,25 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Tunjuk trigger
-        run: |
-          echo "Workflow ini triggered oleh: ${{ github.event_name }}"
+      - name: Checkout kod
+        uses: actions/checkout@v4
+
+      - name: Jalankan skrip automasi
+        run: chmod +x ci.sh && ./ci.sh
+
+      - name: Sediakan artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Lancar ke GitHub Pages
+        uses: actions/deploy-pages@v4
