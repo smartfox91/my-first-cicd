@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{NAMA}}</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <div id="particles-js"></div>
+
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Mohd Adli</a>
+            <a href="#" class="logo">M.ADLI <span class="blink">_</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#education" data-text="Education">Education</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -28,100 +41,112 @@
 
     <header class="hero">
         <div class="container hero-content">
-            <div class="hero-text">
-                <h1>{{TARIKH}}</h1>
-                <h2>Front-End Developer & Multidisciplinary Professional</h2>
-                <p>From Fisherman to Front-End Developer and Everything In Between.</p>
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <div class="badge">Front-End Developer</div>
+                <h1>Mohd Adli <br>bin Jaaffar</h1>
+                <p>Kemaskini Web: {{TARIKH}}</p>
+                <h2 class="typing-effect">Navigating the Digital Ocean</h2>
+                <p>From Fisherman to Front-End Developer. Bridging the gap between Maritime Engineering and Digital Innovation.</p>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/mohd-adli-bin-jaaffar" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:mohd.adli.jaaffar@gmail.com"><i class="fas fa-envelope"></i></a>
                     <a href="https://www.self.so/mohd-adli-bin-jaaffar-5owkds" target="_blank"><i class="fas fa-globe"></i></a>
                 </div>
-                <a href="#contact" class="btn">Get In Touch</a>
+                <a href="#contact" class="btn glint-btn">Initialize Contact</a>
             </div>
-            <div class="hero-image">
-                <img src="https://media.licdn.com/dms/image/v2/D4E03AQHzVL6gbyqIcQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715691295037?e=1766620800&v=beta&t=gVYjjA3EkG09zoU1DJ_g-PdU2J_ACdFmRGn_BXwXAxU" alt="Mohd Adli bin Jaaffar">
+            <div class="hero-image" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="hex-frame">
+                    <img src="https://via.placeholder.com/400x400/0a192f/00f3ff?text=PROFILE+IMG" alt="Mohd Adli bin Jaaffar">
+                </div>
             </div>
         </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I'm Mohd Adli, a multidisciplinary professional whose journey has defied convention and embraced transformation. My career spans over a decade and sails across industries - from the calm waters of maritime engineering to the fast-paced realms of frontend development, IT service management, videography, and data analytics.</p>
-                <br>
-                <p>Starting as a fisherman, I navigated my way through naval architecture, aerospace, automotive logistics at Toyota, and eventually into the digital world developing web and mobile applications, managing new media content, and uncovering insights through data visualization.</p>
-                <br>
-                <p>With hands-on experience in Laravel, React, and warehouse management systems, paired with certifications in Power BI, AWS, and Google Cloud, I blend technical depth with creative flair. Whether it's building seamless digital interfaces, solving complex problems, or leading multimedia campaigns, I bring a unique blend of grit, curiosity, and innovation to every project.</p>
+            <h2 class="section-title" data-aos="fade-up">System Status: <span class="highlight">Online</span></h2>
+            <div class="about-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">user_bio.txt</span>
+                </div>
+                <div class="terminal-body">
+                    <p>> Initiating biography sequence...</p>
+                    <p>> <strong>Identity:</strong> Mohd Adli, Multidisciplinary Professional.</p>
+                    <p>> <strong>Origin:</strong> Maritime Engineering & Fishing.</p>
+                    <p>> <strong>Current State:</strong> Front-End Developer & Data Analyst.</p>
+                    <br>
+                    <p>My career sails across industries - from the calm waters of maritime engineering to the fast-paced realms of frontend development. With hands-on experience in Laravel, React, and warehouse management systems, I blend technical depth with creative flair.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section bg-light">
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" data-aos="fade-down">Mission Log</h2>
             <div class="timeline">
                 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">Oct 2024 - Present</div>
-                    <div class="timeline-content">
+                    <div class="timeline-content glass-panel">
                         <h3>PINC TECHNOLOGY SDN BHD</h3>
-                        <h4>Mobile & Web Application Developer (Feb 2025 - Present)</h4>
-                        <h4>IT Service Management (Oct 2024 - Jan 2025)</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Shah Alam, Selangor, Malaysia</p>
+                        <h4><i class="fas fa-code"></i> Mobile & Web App Developer</h4>
+                        <h4><i class="fas fa-server"></i> IT Service Management</h4>
+                        <p class="location">Shah Alam, Selangor</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">Dec 2020 - Oct 2024</div>
-                    <div class="timeline-content">
+                    <div class="timeline-content glass-panel">
                         <h3>Uniti Runding Sdn Bhd</h3>
-                        <h4>Frontend Developer</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</p>
-                        <p>At Uniti Runding Sdn Bhd, I worked as a Frontend Developer where I was responsible for developing and maintaining responsive web applications using Laravel, collaborating closely with designers and backend developers to ensure smooth, user-friendly interfaces.</p>
-                        <p>I handled debugging, testing, and optimizing applications based on user feedback, while also participating in client meetings to understand project requirements and present updates, ensuring seamless integration between frontend and backend systems.</p>
+                        <h4><i class="fas fa-laptop-code"></i> Frontend Developer</h4>
+                        <p>Developed responsive web apps using Laravel. Collaborated with backend teams to ensure seamless integration.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">May 2021 - Oct 2021</div>
-                    <div class="timeline-content">
-                        <h3>Ifcon Technology Sdn Bhd</h3>
-                        <h4>Frontend Web Developer</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</p>
-                        <p>At Ifcon Technology Sdn Bhd, I served as a Frontend Web Developer, where I focused on building and refining the user interface of the company's digital platforms. I worked closely with UI/UX designers and backend developers to translate wireframes into functional, responsive interfaces, ensuring an intuitive user experience.</p>
-                        <p>My role also included improving usability, maintaining code quality, and ensuring consistency across platforms.</p>
+                    <div class="timeline-content glass-panel">
+                        <h3>Ifcon Technology</h3>
+                        <h4><i class="fas fa-layer-group"></i> Frontend Web Developer</h4>
+                        <p>Translated wireframes into functional, responsive interfaces focusing on UI/UX.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">Mar 2018 - Nov 2020</div>
-                    <div class="timeline-content">
+                    <div class="timeline-content glass-panel">
                         <h3>Multiracial Reverted Muslims</h3>
-                        <h4>New Media Manager</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</p>
-                        <p>I took on the role of New Media Manager, leading digital content strategies across multiple social media platforms. I managed SEO optimization for various NGO websites, directed multimedia content creation, and oversaw the Latin American partnership with Mezquita Estambul in Colombia.</p>
-                        <p>My work combined storytelling, cross-cultural communication, and digital outreach to expand the organization's global reach and engagement.</p>
+                        <h4><i class="fas fa-bullhorn"></i> New Media Manager</h4>
+                        <p>Led digital content strategies, SEO optimization, and multimedia campaigns.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">Jan 2017 - Mar 2018</div>
-                    <div class="timeline-content">
+                    <div class="timeline-content glass-panel">
                         <h3>Toyota Malaysia</h3>
-                        <h4>Warehouse Executive</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Shah Alam, Selangor, Malaysia</p>
-                        <p>I was responsible for overseeing daily warehouse operations, including inventory management, stock movement, and process optimization. I ensured efficient handling and storage of automotive parts, maintained accurate records using warehouse management systems, and supported continuous improvement initiatives aligned with the Toyota Way.</p>
+                        <h4><i class="fas fa-warehouse"></i> Warehouse Executive</h4>
+                        <p>Managed inventory & process optimization aligned with the Toyota Way.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">July 1997 - July 2009</div>
-                    <div class="timeline-content">
-                        <h3>Self-Employed</h3>
-                        <h4>Fisherman</h4>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Lumut, Perak, Malaysia</p>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">1997 - 2009</div>
+                    <div class="timeline-content glass-panel">
+                        <h3>The Open Sea</h3>
+                        <h4><i class="fas fa-fish"></i> Fisherman</h4>
+                        <p>Navigated the physical world before navigating the digital one.</p>
                     </div>
                 </div>
 
@@ -131,62 +156,60 @@
 
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills & Languages</h2>
+            <h2 class="section-title" data-aos="flip-up">Tech Arsenal</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Top Skills</h3>
+                <div class="skill-category glass-panel" data-aos="zoom-in" data-aos-delay="100">
+                    <h3><i class="fas fa-microchip"></i> Development</h3>
                     <ul class="skill-list">
-                        <li>Toyota Way</li>
-                        <li>Warehouse Operations</li>
-                        <li>Warehouse Management Systems</li>
-                        <li>Analyzing and Visualizing Data</li>
+                        <li><div class="skill-bar" style="width: 90%"></div> Laravel</li>
+                        <li><div class="skill-bar" style="width: 85%"></div> React</li>
+                        <li><div class="skill-bar" style="width: 80%"></div> Mobile/Web Apps</li>
+                        <li><div class="skill-bar" style="width: 75%"></div> AWS / Google Cloud</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Technical Stack</h3>
+                <div class="skill-category glass-panel" data-aos="zoom-in" data-aos-delay="200">
+                    <h3><i class="fas fa-database"></i> Data & Ops</h3>
                     <ul class="skill-list">
-                        <li>Laravel</li>
-                        <li>React</li>
-                        <li>Microsoft Power BI</li>
-                        <li>AWS & Google Cloud</li>
-                        <li>Mobile & Web App Development</li>
+                        <li><div class="skill-bar" style="width: 95%"></div> Toyota Way</li>
+                        <li><div class="skill-bar" style="width: 90%"></div> Warehouse Mgmt</li>
+                        <li><div class="skill-bar" style="width: 85%"></div> Power BI</li>
+                        <li><div class="skill-bar" style="width: 80%"></div> Analytics</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h3>Languages</h3>
+                <div class="skill-category glass-panel" data-aos="zoom-in" data-aos-delay="300">
+                    <h3><i class="fas fa-language"></i> Protocols</h3>
                     <ul class="skill-list">
-                        <li>Malay (Native or Bilingual)</li>
-                        <li>English (Full Professional)</li>
-                        <li>Spanish (Elementary)</li>
+                        <li><div class="skill-bar" style="width: 100%"></div> Malay (Native)</li>
+                        <li><div class="skill-bar" style="width: 95%"></div> English (Pro)</li>
+                        <li><div class="skill-bar" style="width: 40%"></div> Spanish (Elem)</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section bg-light">
+    <section id="education" class="section">
         <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Data Archives</h2>
             <div class="two-col-grid">
-                <div>
-                    <h2 class="section-title">Education</h2>
-                    <div class="edu-item">
-                        <h4>Bachelor of Naval Architecture and Shipbuilding</h4>
+                <div data-aos="fade-right">
+                    <h3 class="subsection-title">Academic Download</h3>
+                    <div class="edu-item glass-panel">
+                        <h4>Naval Architecture</h4>
                         <p>Universiti Kuala Lumpur (2012-2016)</p>
                     </div>
-                    <div class="edu-item">
-                        <h4>Diploma, Aeronautical Engineering</h4>
+                    <div class="edu-item glass-panel">
+                        <h4>Aeronautical Engineering</h4>
                         <p>Universiti Teknologi Malaysia (2009-2012)</p>
                     </div>
                 </div>
-                <div>
-                    <h2 class="section-title">Certifications & Awards</h2>
-                    <ul class="cert-list">
-                        <li>Analyzing and Visualizing Data with Microsoft Power BI</li>
-                        <li>Cloud untuk Rakyat via Rakyat Digital portal</li>
-                        <li>AI untuk Rakyat via Rakyat Digital portal</li>
-                        <li>AI Fluency via Rakyat Digital portal</li>
-                        <li>AWS re/Start Graduate</li>
-                        <li><strong>Award:</strong> Gold Medalist for Made in MIMET Exhibition</li>
+                <div data-aos="fade-left">
+                    <h3 class="subsection-title">Certifications</h3>
+                    <ul class="cert-list glass-panel">
+                        <li><i class="fas fa-certificate"></i> Power BI Data Visualization</li>
+                        <li><i class="fas fa-certificate"></i> AWS re/Start Graduate</li>
+                        <li><i class="fas fa-certificate"></i> Cloud & AI untuk Rakyat</li>
+                        <li><i class="fas fa-trophy"></i> Gold Medalist: Made in MIMET</li>
                     </ul>
                 </div>
             </div>
@@ -195,19 +218,22 @@
 
     <footer id="contact">
         <div class="container">
-            <h2>Let's Connect</h2>
-            <p>I'm always looking to connect with forward-thinkers and boundary-pushers in tech, education, and impact-driven industries. If you're into storytelling through code or believe in second acts, let's connect.</p>
-            <br>
-            <p><strong>Email:</strong> mohd.adli.jaaffar@gmail.com</p>
-            <p><strong>Phone:</strong> +60136455520</p>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/mohd-adli-bin-jaaffar" target="_blank">LinkedIn</a> | 
-                <a href="https://www.self.so/mohd-adli-bin-jaaffar-5owkds" target="_blank">Personal Site</a>
+            <h2 data-aos="zoom-in">Establish Uplink</h2>
+            <p>Ready to collaborate on impact-driven projects?</p>
+            <div class="contact-box glass-panel" data-aos="flip-down">
+                <p><i class="fas fa-envelope"></i> mohd.adli.jaaffar@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +6013#######</p>
             </div>
-            <p class="copyright">&copy; <span id="year"></span> Mohd Adli bin Jaaffar. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/mohd-adli-bin-jaaffar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.self.so/mohd-adli-bin-jaaffar-5owkds" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+            <p class="copyright">System.out.print("&copy; <span id="year"></span> Mohd Adli. All Rights Reserved.");</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
